@@ -2,9 +2,9 @@
 <html>
 <head>
 <% if content_for? :title -%>
-  <title>Boxroom | <%= content_for :title %></title>
+  <title>The Fool File Management Server | <%= content_for :title %></title>
 <% else -%>
-  <title>Boxroom</title>
+  <title>The Fool File Management Server</title>
 <% end -%>
   <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application' %>
@@ -32,8 +32,6 @@
     <div id="content">
       <%= yield %>
     </div>
-    <div id="footer_spacer"></div>
-    <%= render 'shared/footer' %>
-  </div>
+    
 </body>
 </html>
